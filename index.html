@@ -9,16 +9,12 @@
         <title>To-Do List</title>
     </head>
     <body>
-        <div class="main-container">
-            <div class="input-container" id="task">
-                <h2>To-Do List</h2>
-                <input type="text" placeholder="Add Task..." id="input">
-                <button onclick="newElement()" class="addTask">Add</button>
-            </div>
-            <div class="tasks-container">
-                <ul id="tasks">
-                </ul>
-            </div>
+        <div class="input-container">
+            <h2>To Do List</h2>
+            <input type="text" id="newTask" placeholder="New Task...">
+            <span onclick="addTask()" class="addTaskBtn">Add</span>
         </div>
+        <ul id="taskList">
+        </ul>
     </body>
 </html>
